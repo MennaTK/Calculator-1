@@ -1,5 +1,4 @@
 body{
-    /* background-color: #edcbfe !important; */
     margin: 0;
     box-sizing: border-box;
 }
@@ -69,4 +68,58 @@ button{
 }
 .light{
     background-color: #edcbfe;
+}
+
+/* responsive */
+
+@media only screen and (max-width:600px){
+    #display{
+        width: 95%;
+        height: 80px;
+        border: none;
+        background-color: darkgray;
+        border-radius: 100px;
+        display: inline-block;
+        margin: 20px auto;
+        color: white;
+        font-size: 30px;
+    
+    }
+    
+    #calc-body{
+        top: 10%;
+        left: 20%;
+        height: 70%;
+        width: 50%;
+      
+    }
+    .grid{
+        grid-gap: 10px;
+
+    }
+    
+    button{
+        width: 7.5vw;
+
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+    #calc-body{
+        top: 10%;
+        left: 20%;
+        height: 80%;
+        width: 40%;
+      
+    }
+    .grid{
+        grid-gap: 5px;
+        grid-template-rows: repeat(5, 20%);
+
+    }
+    
+    button{
+        width: 5vw;
+    }
 }
